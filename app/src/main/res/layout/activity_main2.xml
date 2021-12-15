@@ -8,6 +8,7 @@
     tools:context=".MainActivity2">
 
     <LinearLayout
+        android:id="@+id/linearLayout"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="20dp"
@@ -21,17 +22,6 @@
         app:layout_constraintTop_toTopOf="parent">
 
         <EditText
-            android:id="@+id/etAuthor"
-            android:layout_width="match_parent"
-            android:layout_height="50dp"
-            android:layout_marginBottom="5dp"
-            android:backgroundTint="#56BF6DD2"
-            android:ems="10"
-            android:hint="write author name.."
-            android:inputType="textPersonName"
-            android:paddingStart="5dp" />
-
-        <EditText
             android:id="@+id/etTitle"
             android:layout_width="match_parent"
             android:layout_height="50dp"
@@ -39,6 +29,17 @@
             android:backgroundTint="#56BF6DD2"
             android:ems="10"
             android:hint="write title of recipe.."
+            android:inputType="textPersonName"
+            android:paddingStart="5dp" />
+
+        <EditText
+            android:id="@+id/etAuthor"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginBottom="5dp"
+            android:backgroundTint="#56BF6DD2"
+            android:ems="10"
+            android:hint="write author name.."
             android:inputType="textPersonName"
             android:paddingStart="5dp" />
 
@@ -53,16 +54,14 @@
             android:inputType="textPersonName"
             android:paddingStart="5dp" />
 
-        <EditText
+        <MultiAutoCompleteTextView
             android:id="@+id/etInstructions"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:backgroundTint="#56BF6DD2"
-            android:ems="10"
-            android:hint="write instructions.."
-            android:inputType="textPersonName"
             android:minHeight="48dp"
-            android:paddingStart="5dp" />
+            android:maxHeight="100dp"
+            android:hint="write instructions.."/>
 
         <TextView
             android:id="@+id/tvBar3"
@@ -81,4 +80,5 @@
             android:text="Add To Recipe Book"
             android:textSize="16sp" />
     </LinearLayout>
+
 </androidx.constraintlayout.widget.ConstraintLayout>

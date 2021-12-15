@@ -13,5 +13,5 @@ interface APInterface {
     @POST("recipes/")
     fun addRecipes(
         @Body data: reciepeItem
-    ): Call<ArrayList<reciepeItem>>
+    ): Call<reciepeItem>
 }
