@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bk2"
+    tools:context=".MainActivity2">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginEnd="20dp"
+        android:background="#74E8E8E8"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <EditText
+            android:id="@+id/etAuthor"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginBottom="5dp"
+            android:backgroundTint="#56BF6DD2"
+            android:ems="10"
+            android:hint="write author name.."
+            android:inputType="textPersonName"
+            android:paddingStart="5dp" />
+
+        <EditText
+            android:id="@+id/etTitle"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginBottom="5dp"
+            android:backgroundTint="#56BF6DD2"
+            android:ems="10"
+            android:hint="write title of recipe.."
+            android:inputType="textPersonName"
+            android:paddingStart="5dp" />
+
+        <EditText
+            android:id="@+id/etIngredients"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginBottom="5dp"
+            android:backgroundTint="#56BF6DD2"
+            android:ems="10"
+            android:hint="write ingredients.."
+            android:inputType="textPersonName"
+            android:paddingStart="5dp" />
+
+        <EditText
+            android:id="@+id/etInstructions"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#56BF6DD2"
+            android:ems="10"
+            android:hint="write instructions.."
+            android:inputType="textPersonName"
+            android:minHeight="48dp"
+            android:paddingStart="5dp" />
+
+        <TextView
+            android:id="@+id/tvBar3"
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:background="?android:attr/actionModeSplitBackground"
+            android:backgroundTint="#F1AF95" />
+
+        <Button
+            android:id="@+id/btAddToApi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ellipsize="middle"
+            android:fontFamily="@font/amarante"
+            android:minHeight="48dp"
+            android:text="Add To Recipe Book"
+            android:textSize="16sp" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
